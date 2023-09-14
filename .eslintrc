@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser", // allows ESLint to lint TypeScript code
+  "extends": [
+    "airbnb-base", // airbnb's lint standards: eslint-config-airbnb-base
+    "airbnb-typescript/base", // extends typescript support: eslint-config-airbnb-typescript
+    "prettier"
+  ],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json" // airbnb-typescript requires knowledge of your TypeScript config
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
